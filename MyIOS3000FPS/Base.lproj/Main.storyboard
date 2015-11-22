@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JJ2-gr-gBN">
+                                <rect key="frame" x="16" y="78" width="288" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JJ2-gr-gBN" secondAttribute="height" multiplier="9:11" id="Yk5-WS-0Fi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOf-U1-KSO">
+                                <rect key="frame" x="100" y="460" width="120" height="45"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4RA-J9-eJR"/>
+                                    <constraint firstAttribute="width" constant="120" id="hCG-Im-HYn"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="testBtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8G0-9y-3w5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60011990079999999" blue="0.51884973940000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zOf-U1-KSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1EY-q5-J8O"/>
+                            <constraint firstAttribute="trailing" secondItem="JJ2-gr-gBN" secondAttribute="trailing" constant="16" id="Cby-vv-Xp0"/>
+                            <constraint firstItem="JJ2-gr-gBN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="Jkw-zj-D8z"/>
+                            <constraint firstItem="JJ2-gr-gBN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="f4Z-Vm-g17"/>
+                            <constraint firstItem="zOf-U1-KSO" firstAttribute="top" secondItem="JJ2-gr-gBN" secondAttribute="bottom" constant="30" id="xqz-gE-8fk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImg" destination="JJ2-gr-gBN" id="SWB-Od-IgH"/>
+                        <outlet property="testBtnTwo" destination="zOf-U1-KSO" id="NUW-Nv-V6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2.jpg" width="121" height="121"/>
+    </resources>
+</document>
